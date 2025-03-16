@@ -1,0 +1,95 @@
+#promote {
+    max-width: 75rem;
+    height: 25rem;
+    margin-inline: auto;
+    margin-block: 12rem 0;
+    position: relative;
+
+    &:hover {
+        
+        & span:nth-child(1) {
+            animation: whiteIn .2s linear forwards;
+        }
+        & span:nth-child(2) {
+            animation: blueIn .2s linear forwards;
+        }
+        & span:nth-child(3) {
+            animation: whiteIn .2s .5s linear forwards;
+        }
+        & span:nth-child(4) {
+            animation: blueIn .2s .5s linear forwards;
+        }
+        & span:nth-child(5) {
+            animation: whiteIn .2s 1s linear forwards;
+        }
+        & span:nth-child(6) {
+            animation: blueIn .2s 1s linear forwards;
+        }
+
+        & #img1 {
+            bottom: 100%;
+            left: 50%;
+            rotate: 20deg;
+            animation: fadeIn .2s linear forwards;
+        }
+    
+        & #img2 {
+            left: 0;
+            top: 30%;
+            rotate: 100deg;
+            animation: fadeIn .2s .5s linear forwards;
+        }
+    
+        & #img3 {
+            right: 0;
+            top: 30%;
+            rotate: 340deg;
+            animation: fadeIn .2s 1s linear forwards;
+        }
+    }
+
+    & img {
+        max-width: 88px;
+        transform: scale(0);
+        position: absolute;
+    }
+    
+
+    & p {
+        font: var(--subtitle);
+        color: #e2e7e980;
+        text-align: center;
+    }
+
+}
+
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes whiteIn {
+    0% {
+        color: #e2e7e980;
+    }
+
+    100% {
+        color: var(--text-body);
+    }
+}
+
+@keyframes blueIn {
+    0% {
+        color: #e2e7e980;
+    }
+
+    100% {
+        color: var(--blue-light);
+    }
+}

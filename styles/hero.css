@@ -20,7 +20,17 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        z-index: 1;
+        position: relative;
+        z-index: 3;
+
+        & a:nth-child(2) {
+            font: var(--button);
+            color: var(--text-title);
+        
+            padding: 0.75rem 1.25rem;
+            border-radius: .5rem;
+            background-color: var(--pink-dark);
+        }
     }
 
     & div {
@@ -47,4 +57,27 @@
         }
     }
 
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background-color: var(--shape-background);
+    opacity: 1;
+    animation: blur 3s linear forwards;
+}
+
+@keyframes blur {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
