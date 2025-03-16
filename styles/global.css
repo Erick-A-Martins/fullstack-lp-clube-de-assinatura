@@ -1,0 +1,46 @@
+*, 
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink-light: #C59DD2;
+    --pink-base: #9547A5;
+    --pink-dark: #7D298A;
+    --pink-low: #3F0F41;
+
+    --blue-light: #73B6D2;
+    --blue-base: #358BB9;
+    --blue-mid: #2374A4;
+    --blue-dark: #144A72;
+    --blue-low: #08233C;
+
+    --shape-stroke: #002347;
+    --shape-hover: #001933;
+    --shape-base: #000F1F;
+    --shape-background: #00050A;
+
+    --text-title: #F8FBFB;
+    --text-body: #E2E7E9;
+    --text-label: #BAC6C9;
+
+    --font-family: 'Raleway', sans-serif;
+    --title-lg: bold 3rem var(--font-family);
+    --title-md: bold 2.5rem var(--font-family);
+    --title-sm: bold 2rem var(--font-family);
+    --title-xs: bold 1rem var(--font-family);
+
+    --subtitle: 500 2rem/2 var(--font-family);
+    --body-lg: 1.25rem/1.4 var(--font-family);
+    --body-md: 1rem/1.4 var(--font-family);
+    --body-sm: 0.875rem/1.4 var(--font-family);
+    --body-xs: 0.75rem/1.4 var(--font-family);
+
+    --button: bold 0.875rem var(--font-family);
+    --link: 500 0.875rem var(--font-family);
+    --tag: bold 0.625rem var(--font-family);
+}
+
