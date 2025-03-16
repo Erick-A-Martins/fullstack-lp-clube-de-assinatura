@@ -1,0 +1,50 @@
+#hero {
+    height: 100vh;
+    position: relative;
+
+    & .hero-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    & header {
+        max-width: 80rem;
+        margin-inline: auto;
+        padding-top: 3.5rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    & div {
+        max-width: 41rem;
+        margin-inline: auto;
+        margin-top: 10rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        z-index: 1;
+
+        & h1 {
+            color: var(--text-title);
+        }
+
+        & p {
+            font: var(--body-lg);
+            color: var(--text-body);
+            padding-inline: 2.5rem;
+        }
+    }
+
+}
