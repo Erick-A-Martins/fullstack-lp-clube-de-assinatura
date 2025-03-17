@@ -1,0 +1,191 @@
+#about {
+    & .about-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        padding-left: 2.5rem;
+
+        & div {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            & img {
+                height: 2rem;
+                width: 2rem;
+            }
+
+            & h2 {
+                font: var(--title-sm);
+                color: var(--text-title);
+            }
+        }
+    }
+
+    & .about-container {
+        height: 55rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .about-container-img {
+            width: 29rem;
+            height: 38.5rem;
+        }
+
+        & .container-transition {
+            position: absolute;
+            width: 26rem;
+            height: 36rem;
+            left: 40%;
+
+            &:hover {
+                & img:nth-child(1) {
+                    right: 92%;
+                    top: 72%;
+                    rotate: -8deg;
+                }
+
+                & img:nth-child(2) {
+                    bottom: 25%;
+                    left: 91%;
+                    rotate: 12deg; 
+                }
+
+                & img:nth-child(3) {
+                    left: 112%;
+                    rotate: 22deg;
+                }
+
+                & img:nth-child(4) {
+                    bottom: 101%;
+                    right: 101%;
+                }
+
+                & img:nth-child(5) {
+                    right: 129%;
+                }
+
+                & img:nth-child(6) {
+                    top: 90%;
+                    left: 100%;
+                }
+
+                & span:nth-child(7) {
+                    bottom: 110%;
+                    right: 125%;
+                }
+
+                & span:nth-child(8) {
+                    right: 120%;
+                }
+
+                & span:nth-child(9) {
+                    top: 120%;
+                    left: 80%;
+                }
+
+            } 
+
+           
+
+            & img:nth-child(1) {
+                width: 14rem;
+                height: 16rem;
+                position: absolute;
+                z-index: -1;
+                top: 63%;
+                right: 49%;
+                rotate: 0deg;
+
+                transition: all 300ms;
+            }
+
+            & img:nth-child(2) {
+                width: 10.5rem;
+                height: 33.5rem;
+                position: absolute;
+                bottom: 8%;
+                left: 55%;
+                rotate: 0deg;
+                z-index: -1;
+
+                transition: all 300ms;
+            }
+
+            & img:nth-child(3) {
+                width: 10.5rem;
+                height: 33.5rem;
+                position: absolute;
+                left: 55%;
+                rotate: 0deg;
+                top: 0%;
+                z-index: -2;
+
+                transition: all 300ms;
+            }
+
+            & img:nth-child(4) {
+                position: absolute;
+                bottom: 92%;
+                right: 55%;
+                z-index: -1;
+
+                transition: all 300ms;
+            }   
+
+            & img:nth-child(5) {
+                position: absolute;
+                top: 56%;
+                right: 70%;
+                z-index: -1;
+
+                transition: right 300ms;
+            }
+
+            & img:nth-child(6) {
+                position: absolute;
+                top: 65%;
+                left: 55%;
+                z-index: -1;
+
+                transition: all 300ms;
+            }
+
+            & span:nth-child(7) {
+                position: absolute;
+                bottom: 90%;
+                right: 55%;
+                min-width: 10rem;
+                z-index: -1;
+
+                transition: all 300ms;
+            }
+
+            & span:nth-child(8) {
+                position: absolute;
+                top: 48%;
+                right: 55%;
+                min-width: 10rem;
+                z-index: -1;
+
+                transition: right 300ms;
+            }
+
+            & span:nth-child(9) {
+                position: absolute;
+                top: 85%;
+                left: 50%;
+                min-width: 12rem;
+                z-index: -1;
+
+                transition: all 300ms;
+            }
+        }
+    }
+}
+
+
