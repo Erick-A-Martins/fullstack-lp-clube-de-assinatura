@@ -1,0 +1,97 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 26rem;
+    align-items: center;
+
+    & #bg-footer{
+        position: absolute;
+        background-image: url(/assets/images/book-trace-background.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        z-index: -1;
+    }
+
+    & .left {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        & .left-icons {
+            display: flex;
+            gap: 1rem;
+    
+            & a:nth-child(1) {
+                & div {
+                    background-image: url(/assets/icons/instagram.svg);
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+            }
+    
+            & a:nth-child(2) {
+                & div {
+                    background-image: url(/assets/icons/twitter.svg);
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+            }
+    
+            & a:nth-child(3) {
+                & div {
+                    background-image: url(/assets/icons/facebook.svg);
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+            }
+    
+            & a:nth-child(4) {
+                & div {
+                    background-image: url(/assets/icons/discord.svg);
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+            }
+    
+            & a:nth-child(5) {
+                & div {
+                    background-image: url(/assets/icons/whatsapp.svg);
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+            }
+    
+            & a:nth-child(6) {
+                & div {
+                    background-image: url(/assets/icons/mail.svg);
+                    height: 1.5rem;
+                    width: 1.5rem;
+                }
+            }
+        }
+    }
+
+    & .right {
+        display: flex;
+        gap: 5.6rem;
+
+        & div {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            & h2 {
+                font: var(--title-xs);
+                margin-bottom: .5rem;
+            }
+
+            & a {
+                font: var(--link);
+                color: var(--blue-light);
+            }
+        }
+    }
+}
